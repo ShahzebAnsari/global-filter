@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - AddResponseHeader= global_response_header1, global_header_value1
