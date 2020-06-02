@@ -1,5 +1,8 @@
 spring:
   cloud:
     gateway:
+      httpclient:
+        ssl:
+          useInsecureTrustManager: true
       default-filters:
         - AddResponseHeader= global_response_header1, global_header_value1
